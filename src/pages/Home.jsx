@@ -1,11 +1,20 @@
-import Navbar from "../componets/Navbar"
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 
 const Home = () => {
-    return (
-        <div>
-            <Navbar></Navbar>
-        </div>
-    )
-}
+  return (
+    <div>
+      <div className="flex">
+        <Sidebar></Sidebar>
 
-export default Home
+        <div className="w-full">
+          <Navbar></Navbar>
+          <Outlet></Outlet>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;

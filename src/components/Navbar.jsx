@@ -5,14 +5,14 @@ import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className="py-2 px-5 bg-orange-500 border-b-2 border-gray-400 w-full h-20">
+    <div className="py-2 px-5 bg-orange-500 border-b-2 border-gray-400 w-full">
       <div className="flex items-center">
         <div>
           <h1 className="text-4xl font-extrabold text-white">
             Client<span className="text-black">Flow</span>
           </h1>
         </div>
-        <div className="mx-auto">
+        <div className="ml-auto">
           <ul className="hidden sm:flex gap-10 font-semibold  text-white">
          <NavLink to='dashboard'><li className="cursor-pointer hover:text-amber-300 bg-emerald-800 py-2 px-3 rounded-xl hover:bg-fuchsia-900">
               Dashboard

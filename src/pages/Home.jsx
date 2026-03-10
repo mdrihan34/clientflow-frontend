@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <div>
       <div className="flex">
-        <Sidebar></Sidebar>
+      <div className="hidden sm:flex">
+          <Sidebar></Sidebar>
+      </div>
 
         <div className="w-full">
           <Navbar></Navbar>

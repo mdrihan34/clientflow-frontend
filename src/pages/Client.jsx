@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { FaPen } from "react-icons/fa";
+import EditModel from "../components/EditModel";
 
 const Client = () => {
     const [clients,setClinenta] = useState([
@@ -38,7 +40,7 @@ const Client = () => {
                         <td className="text-center px-4 py-2">{client.email}</td>
                         <td className="text-center px-4 py-2">{client.company}</td>
                         <td className="text-center px-4 py-2">{client.status}</td>
-                        <td className="text-center px-4 py-2"><button>Edit</button></td>
+                        <td className="text-center px-4 py-2 "><EditModel></EditModel></td>
                         </tr>
                            )
                             

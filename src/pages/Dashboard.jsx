@@ -1,12 +1,14 @@
 import { FaFolderOpen ,FaDollarSign  } from "react-icons/fa";
 import { FaUserGroup ,FaClipboardList } from "react-icons/fa6";
-import AddClientForm from "../components/AddClientForm";
+
+import ClintAddModel from "../components/ClintAddModel";
 
 
 
 const Dashboard = () => {
     return (
         <div className=" pl-10  mt-10">
+              <ClintAddModel></ClintAddModel>
             <div className="flex gap-10">
                 <div className="bg-green-900 text-white  p-5 rounded-2xl">
                   <h3 className="font-semibold text-xl">Total Client</h3>
@@ -42,7 +44,7 @@ const Dashboard = () => {
                 </div>
 
             </div>
-        <AddClientForm></AddClientForm>
+    
         </div>
     )
 }

@@ -1,14 +1,13 @@
-import { useForm } from 'react-hook-form';
+import { useForm } from "react-hook-form"
 
-const AddClientForm = () => {
+const EditClint = () => {
     const {register, handleSubmit,reset,  formState: { errors }} = useForm()
-    const onSubmit =  (data)=>{
-    console.log(data)
-    }
+        const onSubmit =  (data)=>{
+        console.log(data)
+        }
     return (
-        <div>
-            <div>
-                <h2 className='text-center text-2xl font-bold mb-2'>Add Client</h2>
+         <div>
+                <h2 className='text-center text-2xl font-bold mb-2'>Update Client</h2>
                 <form className='border-t-2 p-5' onSubmit={handleSubmit(onSubmit)}>
                     <div>
                         <label className='block text-lg font-semibold' htmlFor="">Name</label>
@@ -29,13 +28,16 @@ const AddClientForm = () => {
                          type="text" />
                     </div>
                     <button className='w-full bg-emerald-800 text-white font-bold text-center hover:bg-blue-700 py-4 rounded-xl mt-4' type='submit'>
-                        Submit
+                        Update
                     </button>
+                    <button className='w-full bg-red-900 text-white font-bold text-center hover:bg-blue-700 py-4 rounded-xl mt-4' type='submit'>
+                        Delete
+                    </button>
+
 
                 </form>
             </div>
-        </div>
     )
 }
 
-export default AddClientForm
+export default EditClint

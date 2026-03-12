@@ -1,6 +1,8 @@
 const AddClient = () => {
     return (
-        <div>AddClient</div>
+        <div>
+          add client
+        </div>
     )
 }
 
